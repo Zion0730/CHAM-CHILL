@@ -409,3 +409,49 @@ details p { color: var(--muted); margin-bottom: 0; }
   }
 }
 
+/* Trust evidence, KOL record, and brewery SEO consolidation sections */
+.proof-note {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: .92rem;
+  border-left: 3px solid rgba(123,36,52,.28);
+  padding-left: 12px;
+}
+.avatar-shot,
+.kol-shot {
+  display: grid;
+  place-items: center;
+  min-height: 180px;
+  margin-bottom: 18px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #fff2df, #ead0bd);
+  color: var(--plum);
+  font-weight: 900;
+  border: 1px dashed rgba(123,36,52,.28);
+}
+.kol-shot {
+  background: linear-gradient(135deg, #f1e4ce, #ffe2d9);
+}
+.customer-card p,
+.kol-record .post-card p {
+  color: var(--muted);
+}
+.brewery-grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 22px;
+}
+.brewery-grid article {
+  background: rgba(255, 253, 249, 0.82);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(36,21,16,.05);
+}
+.brewery-grid p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+@media (min-width: 760px) {
+  .brewery-grid { grid-template-columns: 1fr 1fr; }
+}
